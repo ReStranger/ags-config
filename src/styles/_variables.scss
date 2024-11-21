@@ -1,0 +1,31 @@
+@use "sass:string";
+
+@function gtkalpha($c, $a) {
+  @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+// Colors 
+
+$widget-fg: #eeeeee;
+$widget-bg: #171717;
+$primary-fg: #141414;
+$primary-bg: #cba6f7;
+$hover-bg: rgba(238, 238, 238, 0.06); //C
+
+// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+// $fg: #{"@theme_fg_color"};
+// $bg: #{"@theme_bg_color"};
+// $primary-fg: black;
+// $primary-bg: #cba6f7;
+
+// Global
+
+$border-color: rgba(238, 238, 238, 0.15);
+$border-width: 2px;
+
+$padding: 5px;
+$radius: 15px;
+$shadows: true;
+$shadow-color: gtkalpha(black, .4);
+// Bar
+$bar-position: "top";

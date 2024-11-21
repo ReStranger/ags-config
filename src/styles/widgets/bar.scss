@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.bar {
+  all: unset;
+  background: $widget-bg;
+  color: $widget-fg;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  .bar-button {
+    all: unset;
+    border-radius: $radius;
+    background-color: $hover-bg;
+    box-shadow: 0 0 0 1px rgba(238, 238, 238, 0.04) inset;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    margin: 5px;
+    padding: 3px 7px 3px 7px;
+
+    &:active {
+      color: $primary-fg;
+      background: $primary-bg;
+    }
+
+    .system-icon {
+      font-size: 1.5rem;
+    }
+  }
+}
