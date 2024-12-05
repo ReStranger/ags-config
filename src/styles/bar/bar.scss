@@ -1,0 +1,13 @@
+@use "../variables" as *;
+@use "./bar-widget-wrapper.scss";
+
+window.Bar {
+  font-family: Google Sans;
+  background: transparent;
+  color: $theme-dark-fg-color;
+
+  >centerbox {
+    background: $theme-dark-bg-color;
+
+  }
+}

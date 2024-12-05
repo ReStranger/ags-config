@@ -1,5 +1,6 @@
 import { App, Astal, Gtk, Gdk } from "astal/gtk3";
 import { Variable } from "astal";
+import BarWidgetWrapper from "./widgets/BarWidgetWrapper";
 
 const time = Variable("").poll(1000, "date");
 
@@ -20,7 +21,11 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         <button onClicked="echo hello" halign={Gtk.Align.CENTER}>
           Welcome to AGS!
         </button>
-        <box />
+        <BarWidgetWrapper>
+          <button onClicked="echo hello" halign={Gtk.Align.CENTER}>
+            ssssssss
+          </button>
+        </BarWidgetWrapper>
         <button onClick={() => print("hello")} halign={Gtk.Align.CENTER}>
           <label label={time()} />
         </button>
