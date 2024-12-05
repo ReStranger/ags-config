@@ -18,5 +18,10 @@
                 "/home/restranger/.local/share/ags/*"
             ]
         },
+        "include": [
+          "@girs/**/*",
+          "src/**/*",
+          "index.tsx"
+        ]
     }
 }
