@@ -1,6 +1,6 @@
 import { App, Astal } from "astal/gtk3";
 import styles from "./styles/index.scss";
-import Bar from "./widget/bar/Bar";
+import Bar from "./widgets/bar/Bar";
 
 export const index: any = () => {
   return App.start({
