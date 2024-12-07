@@ -9,5 +9,9 @@ window.Bar {
   >centerbox {
     background: $theme-dark-bg-color;
 
+    >box {
+      font-size: 1rem;
+      font-weight: bold;
+    }
   }
 }
