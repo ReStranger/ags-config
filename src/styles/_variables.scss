@@ -1,0 +1,26 @@
+@use "sass:string";
+
+@function gtkalpha($c, $a) {
+  @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+// Colors
+
+$dark-primary-fg: #11111b;
+$dark-primary-bg: #cba6f7;
+
+$dark-widget-text: #cdd6f4;
+$dark-widget-bg0: #1e1e2e;
+$dark-widget-bg1: #181825;
+$dark-widget-bg1: #11111b;
+
+// Global
+$border-color: black;
+$border-width: 2px;
+
+$padding: 5px;
+$radius: 15px;
+$shadows: true;
+$shadow-color: gtkalpha(black, .4);
+// Bar
+$bar-position: "top";
