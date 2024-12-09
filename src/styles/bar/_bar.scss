@@ -1,0 +1,9 @@
+@use "../variables" as *;
+@use "./button_bar_wrapper";
+
+.Bar {
+  >centerbox {
+    background-color: $dark-widget-bg1;
+  }
+
+}

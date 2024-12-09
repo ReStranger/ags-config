@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.BarButtonWrapper {
+  all: unset;
+  font-family: Google Sans;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: $dark-widget-sf0;
+  color: $dark-widget-text;
+  padding: .5rem;
+  margin: 5px;
+  border-radius: $radius - 3px;
+}
