@@ -1,0 +1,30 @@
+@use "../variables" as *;
+
+.Clock {
+
+  .Time,
+  .Date {
+    all: unset;
+    padding: .0625rem .5rem;
+    border-radius: $radius - $padding;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
+    &:hover {
+      background-color: #cba6f7;
+      color: #11111b;
+    }
+  }
+
+  .Time {
+    border-top-right-radius: $radius - 1.7 * $padding;
+    border-bottom-right-radius: $radius - 1.7 * $padding;
+    margin-right: 2px;
+  }
+
+  .Date {
+    border-top-left-radius: $radius - 1.7 * $padding;
+    border-bottom-left-radius: $radius - 1.7 * $padding;
+    margin-left: 2px;
+  }
+}

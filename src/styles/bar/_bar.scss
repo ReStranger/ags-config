@@ -1,5 +1,6 @@
 @use "../variables" as *;
 @use "./button_bar_wrapper";
+@use "./clock";
 
 .Bar {
   >centerbox {

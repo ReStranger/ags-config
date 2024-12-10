@@ -1,8 +1,6 @@
 import { App, Astal, Gtk, Gdk } from "astal/gtk3";
-import { Variable } from "astal";
 import BarButtonWrapper from "./buttons/BarButtonWrapper";
-
-const time = Variable("").poll(1000, "date");
+import Clock from "./buttons/Clock";
 
 export default (gdkmonitor: Gdk.Monitor) => {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor;
@@ -16,13 +14,19 @@ export default (gdkmonitor: Gdk.Monitor) => {
       application={App}
     >
       <centerbox>
-        <box />
-        <BarButtonWrapper>
-          <label label="sdss" />
-        </BarButtonWrapper>
-        <button onClick={() => print("hello")} halign={Gtk.Align.CENTER}>
-          <label label={time()} />
-        </button>
+        <box>
+          <BarButtonWrapper>
+            <label label="sdss" />
+          </BarButtonWrapper>
+        </box>
+        <box className="BarCenterWidgets">
+          <BarButtonWrapper>
+            <Clock />
+          </BarButtonWrapper>
+        </box>
+        <box>
+          <button onClick={() => print("hello")} halign={END}></button>
+        </box>
       </centerbox>
     </window>
   );
